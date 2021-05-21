@@ -29,4 +29,10 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
     assert_select "title", "Contact | #{@base_title}"
   end
+  
+  test "should get canvas" do
+    get canvas_path
+    assert_response :success
+    assert_select "title", "Canvas | #{@base_title}"
+  end
 end
