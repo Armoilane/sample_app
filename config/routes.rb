@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   get '/contact', to: 'static_pages#contact'
   get '/canvas',  to: 'static_pages#canvas'
   get '/signup',  to: 'users#new'
+  resources :users
 end
